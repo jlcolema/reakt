@@ -1,0 +1,262 @@
+
+/*-------------------------------------------
+	Footer
+-------------------------------------------*/
+
+
+#footer {
+
+	padding: 100px 0 35px 0;
+	color: $white;
+	background: $black;
+
+	.wrap {
+
+		@media screen and (min-width: 640px) {
+
+			position: relative;
+
+		}
+
+	}
+
+}
+
+		.h-card {
+
+			@include font-size(15);
+			line-height: (20/15) + em;
+			text-transform: uppercase;
+
+			.p-name {
+
+				position: relative;
+				left: -8px;
+				margin: 0 0 12px 0;
+				@include hide-text;
+
+				a {
+
+					display: block;
+					width: 156px;
+					height: 50px;
+					background: url(../img/footer-logo.svg);
+
+					.mod-no-svg & {
+
+						background-image: url(../img/footer-logo.png);
+
+					}
+
+					&:hover {}
+
+				}
+
+			}
+
+			.p-adr {
+
+				margin: 0 0 15px 0;
+
+			}
+
+				.p-street-address {}
+
+				.p-locality {}
+
+				.p-region {}
+
+				.p-postal-code {}
+
+			.p-tel {
+
+				.label {}
+
+				a {
+
+					color: $white;
+					text-decoration: none;
+
+					&:hover {}
+
+				}
+
+			}
+
+			.u-email {
+
+				a {
+
+					color: $white;
+					text-decoration: none;
+					transition: color 0.35s ease-in-out;
+
+					&:hover {
+
+						color: rgba($white, 0.65);
+
+					}
+
+				}
+
+			}
+
+		}
+
+		.connect {
+
+			position: relative;
+			left: -15px;
+			margin: 12px 0 0 0;
+
+			@media screen and (min-width: 640px) {
+
+				position: absolute;
+				left: auto;
+				right: 32px;
+				top: 0;
+				margin: 0;
+				z-index: 1;
+
+			}
+
+			@media screen and (min-width: 700px) {
+
+				right: 52px;
+
+			}
+
+			ul {
+
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				@include group;
+
+			}
+
+				li {
+
+					float: left;
+					margin: 0 0 0 18px;
+					@include hide-text;
+
+					&:first-of-type {
+
+						margin: 0;
+
+					}
+
+				}
+
+					a {
+
+						display: block;
+						width: 36px;
+						height: 36px;
+						background: url(../img/connect.svg);
+						background-size: 180px 36px;
+						opacity: 1;
+						transition: opacity 0.35s ease-in-out;
+
+						.mod-no-svg & {
+
+							background-image: url(../img/connect.png);
+
+						}
+
+						&:hover {
+
+							opacity: 0.65;
+
+						}
+
+					}
+
+				.facebook {
+
+					a {
+
+						&:hover {}
+
+					}
+
+				}
+
+				.vimeo {
+
+					margin-left: 8px;
+
+					a {
+
+						background-position: -36px;
+
+						&:hover {}
+
+					}
+
+				}
+
+				.behance {
+
+					margin-left: 16px;
+
+					a {
+
+						background-position: -72px;
+
+						&:hover {}
+
+					}
+
+				}
+
+				.linkedin {
+
+					margin-left: 20px;
+
+					a {
+
+						background-position: -108px;
+
+						&:hover {}
+
+					}
+
+				}
+
+				.instagram {
+
+					margin-left: 15px;
+
+					a {
+
+						background-position: -144px;
+
+						&:hover {}
+
+					}
+
+				}
+
+		}
+
+		#copyright {
+
+			margin: 80px 0 0 0;
+			@include font-size(15);
+			line-height: (18/15) + em;
+			text-transform: uppercase;
+			color: rgba($white, 0.28);
+
+			@media screen and (min-width: 640px) {
+
+				margin: 90px 0 0 0;
+
+			}
+
+			small {}
+
+				span {}
+
+		}

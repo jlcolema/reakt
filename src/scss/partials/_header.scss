@@ -1,0 +1,296 @@
+
+/*-------------------------------------------
+	Header
+-------------------------------------------*/
+
+
+#header {
+
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: rgba($white, 0);
+	transition: 0.35s ease-in-out;
+	z-index: 5;
+
+	.small-header & {
+
+		background: $white;
+
+	}
+
+	.wrap {
+
+		position: relative;
+		height: 125px;
+		// transition: height 0.35s ease-in-out;
+
+		.small-header & {
+
+			// height: 125px;
+
+		}
+
+	}
+
+}
+
+		#logo {
+
+			position: absolute;
+			left: 12px;
+			top: 50%;
+			margin: -25px 0 0 0;
+			@include hide-text;
+			z-index: 1;
+
+			@media screen and (min-width: 480px) {
+
+				left: 32px;
+
+			}
+
+			@media screen and (min-width: 700px) {
+
+				left: 52px;
+
+			}
+
+			a {
+
+				display: block;
+				padding: 0 7px 0 0;
+				transition: padding 0.35s ease-in-out;
+
+				&:hover {
+
+					padding: 0;
+
+					span {
+
+						width: 156px;
+
+					}
+
+				}
+
+			}
+
+				span {
+
+					display: block;
+					width: 36px;
+					height: 50px;
+					background: url(../img/logo.svg);
+					transition: width 0.35s ease-in-out;
+
+					.mod-no-svg & {
+
+						background-image: url(../img/logo.png);
+
+					}
+
+				}
+
+		}
+
+		#nav {
+
+			.toggle {
+
+				position: absolute;
+				right: 12px;
+				top: 50%;
+				width: 40px;
+				height: 40px;
+				padding: 12px 8px 0 8px;
+				margin: -20px 0 0 0;
+				z-index: 10;
+
+				@media screen and (min-width: 480px) {
+
+					right: 32px;
+
+				}
+
+				@media screen and (min-width: 700px) {
+
+					right: 52px;
+
+				}
+
+				.hamburger {
+
+					position: relative;
+					width: 24px;
+					height: 15px;
+					transform: rotate(0deg);
+					transition: .5s ease-in-out;
+					cursor: pointer;
+
+					span {
+
+						display: block;
+						position: absolute;
+						left: 0;
+						width: 100%;
+						height: 3px;
+						background: $black;
+						opacity: 1;
+						transform: rotate(0deg);
+						transition: all 0.25s ease-in-out;
+
+						&:nth-child(1) {
+
+							top: 0;
+
+						}
+
+						&:nth-child(2),
+						&:nth-child(3) {
+
+							top: 6px;
+
+						}
+
+						&:nth-child(4) {
+
+							top: 12px;
+
+						}
+
+					}
+
+				}
+
+				.label {
+
+					display: none;
+
+				}
+
+			}
+
+			.overlay {
+
+				display: table;
+				position: fixed;
+				left: 0;
+				top: -100%;
+				width: 100%;
+				height: 100%;
+				background: rgba($black, 0);
+				transition: top 0.25s ease-in-out, background 0.25s ease-in-out;
+				z-index: 5;
+
+			}
+
+				.inner-overlay {
+
+					display: table-cell;
+					width: 100%;
+					height: 100%;
+					padding: 0 20px;
+					vertical-align: middle;
+
+					@media screen and (min-width: 480px) {
+
+						padding: 0 40px;
+
+					}
+
+					@media screen and (min-width: 700px) {
+
+						padding: 0 60px;
+
+					}
+
+				}
+
+					ul {
+
+						margin: 0;
+						padding: 0;
+						list-style: none;
+						text-align: center;
+
+					}
+
+						li {
+
+							display: inline-block;
+							margin: 15px 30px;
+							@include font-size(25);
+							line-height: (30/25) + em;
+							@include industry-bold;
+							text-transform: uppercase;
+
+						}
+
+							a {
+
+								color: $white;
+								text-decoration: none;
+								transition: color 0.35s ease-in-out;
+
+								&:hover {
+
+									color: rgba($white, 0.65);
+
+								}
+
+							}
+
+			// While open...
+
+			&.open {
+
+				.hamburger {
+
+					span {
+
+						background: $white;
+
+						&:nth-child(1) {
+
+							left: 50%;
+							top: 6px;
+							width: 0%;
+
+						}
+
+						&:nth-child(2) {
+
+							transform: rotate(45deg);
+
+						}
+
+						&:nth-child(3) {
+
+							transform: rotate(-45deg);
+
+						}
+
+						&:nth-child(4) {
+
+							left: 50%;
+							top: 6px;
+							width: 0%;
+
+						}
+
+					}
+
+				}
+
+				.overlay {
+
+					top: 0;
+					background: rgba($black, 0.90);
+
+				}
+
+			}
+
+		}

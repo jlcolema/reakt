@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="20px" viewBox="0 0 40 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>dropdown</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="dropdown">
+            <g id="move" transform="translate(2.000000, 5.000000)" fill="#000000">
+                <path d="M6.22888395,8.16222144 L8.39506173e-05,2.18774614 L2.19413333,0.0832807843 L8.42293333,6.05775608 L14.6517333,0.0832807843 L16.8457827,2.18774614 L10.6169827,8.16222144 L9.30055309,9.42490065 L8.42301728,10.2666063 L7.54531358,9.42490065 L6.22875802,8.16234222 Z" id="Fill-1"></path>
+            </g>
+            <g id="move-copy" transform="translate(22.000000, 5.000000)" fill="#006FBC">
+                <path d="M6.22888395,8.16222144 L8.39506173e-05,2.18774614 L2.19413333,0.0832807843 L8.42293333,6.05775608 L14.6517333,0.0832807843 L16.8457827,2.18774614 L10.6169827,8.16222144 L9.30055309,9.42490065 L8.42301728,10.2666063 L7.54531358,9.42490065 L6.22875802,8.16234222 Z" id="Fill-1"></path>
+            </g>
+        </g>
+    </g>
+</svg>

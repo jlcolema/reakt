@@ -1,0 +1,23 @@
+
+/*-------------------------------------------
+	Content
+-------------------------------------------*/
+
+
+#content {
+
+	padding: 0 0 110px 0;
+
+	// Some sections have more refined control of padding...
+
+	.blog &,
+	.single-post &,
+	.page-id-13 & /* Profile Page */ {
+
+		padding: 0;
+
+	}
+
+	.wrap {}
+
+}

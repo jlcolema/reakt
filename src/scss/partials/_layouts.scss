@@ -1,0 +1,183 @@
+
+/*-------------------------------------------
+	Layouts
+-------------------------------------------*/
+
+
+html {
+
+	height: 100%;
+
+}
+
+body {
+
+	padding: 125px 0 0 0;
+	height: 100%;
+	// transition: padding 0.35s ease-in-out;
+
+	&.small-header {
+
+		// padding: 125px 0 0 0;
+
+	}
+
+	&.home {
+
+		padding: 0;
+
+	}
+
+}
+
+	#header {
+
+		.wrap {
+
+			// Actual full width is 1296px
+
+			width: 100%;
+			max-width: 1416px;
+			margin: 0 auto;
+			padding: 0 20px;
+
+			@media screen and (min-width: 480px) {
+
+				padding: 0 40px;
+
+			}
+
+			@media screen and (min-width: 700px) {
+
+				padding: 0 60px;
+
+			}
+
+		}
+
+	}
+
+	#slideshow {
+
+		.wrap {}
+
+	}
+
+	#content {}
+
+		.hero {
+
+			.wrap {
+
+				// Actual full width is 1296px
+
+				width: 100%;
+				max-width: 1416px;
+				margin: 0 auto;
+				padding: 0 20px;
+
+				@media screen and (min-width: 480px) {
+
+					padding: 0 40px;
+
+				}
+
+				@media screen and (min-width: 700px) {
+
+					padding: 0 60px;
+
+				}
+
+			}
+
+		}
+
+		.main {
+
+			// Some sections have gray background...
+
+			.blog &,
+			.single-post & {
+
+				background: rgb(236, 236, 236);
+
+			}
+
+			.wrap {
+
+				// Actual full width is 1296px
+
+				width: 100%;
+				max-width: 1416px;
+				margin: 0 auto;
+				padding: 0 20px;
+
+				@media screen and (min-width: 480px) {
+
+					padding: 0 40px;
+
+				}
+
+				@media screen and (min-width: 700px) {
+
+					padding: 0 60px;
+
+				}
+
+			}
+
+		}
+
+	#recent-news {
+
+		.wrap {
+
+			// Actual full width is 1296px
+
+			width: 100%;
+			max-width: 1416px;
+			margin: 0 auto;
+			padding: 0 20px;
+
+			@media screen and (min-width: 480px) {
+
+				padding: 0 40px;
+
+			}
+
+			@media screen and (min-width: 700px) {
+
+				padding: 0 60px;
+
+			}
+
+		}
+
+	}
+
+	#footer {
+
+		.wrap {
+
+			// Actual full width is 1296px
+
+			width: 100%;
+			max-width: 1416px;
+			margin: 0 auto;
+			padding: 0 20px;
+
+			@media screen and (min-width: 480px) {
+
+				padding: 0 40px;
+
+			}
+
+			@media screen and (min-width: 700px) {
+
+				padding: 0 60px;
+
+			}
+
+		}
+
+	}

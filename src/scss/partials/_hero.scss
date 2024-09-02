@@ -1,0 +1,293 @@
+
+/*-------------------------------------------
+	Hero
+-------------------------------------------*/
+
+
+.hero {
+
+	height: 100%;
+	margin: 0 0 85px 0;
+
+	.wrap {
+
+		position: relative;
+		height: 100%;
+		max-width: none;
+		margin: 0;
+		padding: 0;
+
+	}
+
+		.image {
+
+			position: relative;
+			height: 100%;
+			background-size: cover;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			overflow: hidden;
+
+		}
+
+			// picture {
+
+			// 	position: absolute;
+			// 	left: 50%;
+			// 	top: 0;
+			// 	height: 100%;
+			// 	transform: translate(-50%, 0);
+			// 	z-index: 1;
+
+			// }
+
+			// 	img {
+
+			// 		max-width: none;
+			// 		height: 100%;
+
+			// 	}
+
+			.overlay {
+
+				position: absolute;
+				left: 0;
+				top: 0;
+				display: table;
+				width: 100%;
+				height: 100%;
+				z-index: 1;
+
+				.inner-overlay {
+
+					display: table-cell;
+					width: 100%;
+					height: 100%;
+					padding: 0 30px;
+					vertical-align: middle;
+
+				}
+
+					h1 {
+
+						margin-bottom: (25/50) + em;
+						@include font-size(50);
+						line-height: (60/50) + em;
+						text-transform: uppercase;
+						text-align: center;
+						color: $white;
+
+						img {
+
+							max-width: 100%;
+							height: auto;
+							margin: 0 auto;
+
+						}
+
+					}
+
+					h2 {
+
+						margin: 0;
+						@include font-size(30);
+						line-height: (40/30) + em;
+						@include industry-light;
+						text-transform: uppercase;
+						text-align: center;
+						color: $white;
+
+						@media screen and (min-width: 500px) {
+
+							@include font-size(50);
+							line-height: (60/50) + em;
+
+						}
+
+					}
+
+			}
+
+		.video {
+
+			position: relative;
+			height: 0;
+			padding: 35px 0 56.25% 0;
+			overflow: hidden;
+
+			iframe {
+
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+
+			}
+
+		}
+
+		.more-details {
+
+			position: absolute;
+			left: 50%;
+			bottom: 28px;
+			margin-left: -18px;
+			@include hide-text;
+			z-index: 4;
+
+			@media screen and (min-width: 560px) and (min-height: 560px) {
+
+				margin-left: -25px;
+				bottom: 45px;
+
+			}
+
+			a {
+
+				display: block;
+				width: 36px;
+				height: 36px;
+				background: url(../img/scroll.svg);
+				background-size: 36px 36px;
+
+				@media screen and (min-width: 560px) and (min-height: 560px) {
+
+					width: 50px;
+					height: 50px;
+					background-size: 50px 50px;
+
+				}
+
+				.mod-no-svg & {
+
+					background-image: url(../img/scroll.png);
+
+				}
+
+				&:hover {}
+
+			}
+
+		}
+
+}
+
+// New Hero for Profile Page
+
+.new-hero {
+
+	position: relative;
+	padding: 60px 0 90px 0;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+
+	@media screen and (min-width: 560px) {
+
+		padding: 90px 0 126px 0;
+
+	}
+
+	.wrap {
+
+		// Actual full width is 1296px
+
+		width: 100%;
+		max-width: 1416px;
+		margin: 0 auto;
+		padding: 0 20px;
+
+		@media screen and (min-width: 480px) {
+
+			padding: 0 40px;
+
+		}
+
+		@media screen and (min-width: 700px) {
+
+			padding: 0 60px;
+
+		}
+
+	}
+
+		.image {}
+
+			picture {}
+
+				img {}
+
+			.overlay {
+
+				width: 100%;
+
+				.inner-overlay {}
+
+					h1 {
+
+						margin: 0;
+						width: 100%;
+						max-width: 980px;
+						@include font-size(19);
+						line-height: (25/19) + em;
+						@include industry-light;
+						text-transform: uppercase;
+						letter-spacing: 1px;
+						color: $white;
+
+						@media screen and (min-width: 560px) {
+
+							@include font-size(40);
+							line-height: (56/40) + em;
+
+						}
+
+					}
+
+			}
+
+		.more-details {
+
+			position: absolute;
+			left: 50%;
+			bottom: 28px;
+			margin-left: -25px;
+			@include hide-text;
+			z-index: 4;
+
+			@media screen and (min-width: 560px) {
+
+				bottom: 45px;
+
+			}
+
+			a {
+
+				display: block;
+				width: 36px;
+				height: 36px;
+				background: url(../img/scroll.svg);
+				background-size: 36px 36px;
+
+				@media screen and (min-width: 560px) {
+
+					width: 50px;
+					height: 50px;
+					background-size: 50px 50px;
+
+				}
+
+				.mod-no-svg & {
+
+					background-image: url(../img/scroll.png);
+
+				}
+
+				&:hover {}
+
+			}
+
+		}
+
+}

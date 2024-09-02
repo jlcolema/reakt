@@ -1,0 +1,97 @@
+
+//-------------------------------------------
+//	Fonts
+//-------------------------------------------
+
+
+// Font Family: Industry
+// Service: YouWorkForThem
+// URL: https://www.youworkforthem.com/font/T5020/industry
+// Foundry: Fort Foundry
+
+
+// Light
+
+
+@font-face {
+
+	font-family: "Industry Light";
+
+	src: url("../fonts/industry/light/industry-light.eot");
+	src: url("../fonts/industry/light/industry-light.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/industry/light/industry-light.woff2") format("woff2"),
+		 url("../fonts/industry/light/industry-light.woff") format("woff"),
+		 url("../fonts/industry/light/industry-light.ttf") format("truetype"),
+		 url("../fonts/industry/light/industry-light.svg#industry-light") format("svg");
+
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+@mixin industry-light {
+
+	font-family: "Industry Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+// Book
+
+
+@font-face {
+
+	font-family: "Industry Book";
+
+	src: url("../fonts/industry/book/industry-book.eot");
+	src: url("../fonts/industry/book/industry-book.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/industry/book/industry-book.woff2") format("woff2"),
+		 url("../fonts/industry/book/industry-book.woff") format("woff"),
+		 url("../fonts/industry/book/industry-book.ttf") format("truetype"),
+		 url("../fonts/industry/book/industry-book.svg#industry-book") format("svg");
+
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+@mixin industry-book {
+
+	font-family: "Industry Book", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+// Bold
+
+
+@font-face {
+
+	font-family: "Industry Bold";
+
+	src: url("../fonts/industry/bold/industry-bold.eot");
+	src: url("../fonts/industry/bold/industry-bold.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/industry/bold/industry-bold.woff2") format("woff2"),
+		 url("../fonts/industry/bold/industry-bold.woff") format("woff"),
+		 url("../fonts/industry/bold/industry-bold.ttf") format("truetype"),
+		 url("../fonts/industry/bold/industry-bold.svg#industry-bold") format("svg");
+
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+@mixin industry-bold {
+
+	font-family: "Industry Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+
+}

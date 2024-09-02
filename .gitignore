@@ -1,0 +1,28 @@
+.DS_Store
+*.nova
+*.code-workspace
+organize/*
+
+# Ignore everything in the root except the 'wp-content' directory.
+
+dist/public/*
+
+!dist/public/wp-content/
+
+# Ignore everything in the 'wp-content' directory, except the 'mu-plugins', plugins', 'themes', and 'uploads' directories.
+
+dist/public/wp-content/*
+
+!dist/public/wp-content/themes/
+
+# Ignore everything in the 'themes' directory, except the themes you specify (see the commented-out example for a hint on how to do this).
+
+dist/public/wp-content/themes/*
+
+!dist/public/wp-content/themes/reakt/
+
+# Miscellaneous
+
+*.nova
+*.code-workspace
+package-lock.json

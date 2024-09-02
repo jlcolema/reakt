@@ -1,0 +1,123 @@
+
+/*-------------------------------------------
+	Recent News
+-------------------------------------------*/
+
+
+#recent-news {
+
+	padding: 44px 0 20px 0;
+	background: rgb(236, 236, 236);
+
+	@media screen and (min-width: 640px) {
+
+		padding: 44px 0 140px 0;
+
+	}
+
+	.wrap {}
+
+		h2 {
+
+			margin-bottom: (50/50) + em;
+			@include font-size(50);
+			line-height: (80/50) + em;
+			@include industry-light;
+			text-transform: uppercase;
+			text-align: center;
+			color: $black;
+
+		}
+
+		.articles {
+
+			@media screen and (min-width: 480px) {
+
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+
+			}
+
+			@media screen and (min-width: 640px) {
+
+				flex-wrap: nowrap;
+
+			}
+
+		}
+
+			article {
+
+				margin: 0 0 118px 0;
+
+				@media screen and (min-width: 480px) {
+
+					width: 48%;
+					width: calc(50% - 20px);
+
+				}
+
+				@media screen and (min-width: 640px) {
+
+					width: 29%;
+					width: calc(33.33333% - 20px);
+					margin: 0;
+
+				}
+
+				@media screen and (min-width: 900px) {
+
+					width: 29%;
+					width: calc(33.33333% - 45px);
+
+				}
+
+				@media screen and (min-width: 1200px) {
+
+					width: 29%;
+					width: calc(33.33333% - 75px);
+
+				}
+
+				.thumbnail {
+
+					margin: 0 0 24px 0;
+
+					a {
+
+						&:hover {}
+
+					}
+
+				}
+
+				h1 {
+
+					margin-bottom: (16/20) + em;
+					@include font-size(20);
+					line-height: (22/20) + em;
+					@include industry-book;
+
+					a {
+
+						color: rgb(3, 3, 3);
+						text-decoration: none;
+
+						&:hover {}
+
+					}
+
+				}
+
+				time {
+
+					@include font-size(15);
+					line-height: (19/15) + em;
+					color: rgb(111, 110, 110);
+
+				}
+
+			}
+
+}
